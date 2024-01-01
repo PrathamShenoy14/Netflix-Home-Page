@@ -1,0 +1,395 @@
+html{
+    background-color: black;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item{
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.text-div{
+    height: 550px;
+    width: 600px;
+    font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.img-div{
+    height: 550px;
+    width: 575px;
+}
+
+h1{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.div2 p{
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.div2 img{
+    background-image: url(./Images/inside-tv.jpg);
+    background-size:contain;
+    height:auto;
+    width: 575px;
+    margin-top: 50px;
+}
+
+.div4 img{
+    margin-top: 50px;
+}
+
+.div5>.text-div{
+    margin-left: 30px;
+}
+
+.div6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div6>h1{
+    font-size: 3.5em;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.dropdown{
+    width: 80%;
+    height: 90px;
+    background-color: rgb(47, 46, 46);
+    cursor: pointer;
+}
+
+.dropdown:hover{
+    box-shadow: inset;
+    filter: brightness(150%);
+}
+
+.dropdown>p{
+    display: inline-block;
+}
+
+
+.Question{
+    float: left;
+    padding-left: 20px;
+    font-size: 1.8em;
+}
+
+
+.Symbol{
+    float: right;
+    text-align: center;
+    margin: 0px;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-size: 3.5rem;
+}
+
+.last{
+    font-size: 1.4rem;
+}
+
+.email{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.email>input{
+    height: 45px;
+    margin-bottom: 70px;
+    width: 350px;
+    border-radius: 1.25%;
+    background-color: transparent;
+    border-color: rgb(255, 254, 254);
+    color: rgb(228, 222, 222);
+    font-size: larger;
+
+}
+
+.email>input:focus::placeholder{
+    color: transparent;
+}
+
+.email>input:focus{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 3px white;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.btn{
+    text-align:center;
+    height: 52px;
+    width: 205px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(247, 21, 21);
+    font-weight: bold;
+    border: solid rgb(247, 21, 21);
+    border-radius: 2.25%;
+}
+
+.btn:hover{
+    filter: grayscale(20%);
+    cursor: pointer;
+}
+
+
+footer{
+    color: rgb(201, 198, 198);
+    background-color: black;
+    margin-top: 4px;
+}
+.fcon{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.fitem{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+a:link{
+    color: rgb(201, 198, 198);
+}
+
+a:visited{
+    color: rgb(201, 198, 198);
+}
+
+a:hover{
+    color: red;
+}
+
+.div1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)) ,url(./Images/netflix-poster.jpg);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1>.text-div{
+    font-size: 1.8em;
+    height: 200px;
+    width: 80%;
+    text-align: center;
+}
+
+.nav-bar{
+    width:100%;
+    height: 100px;
+    margin-bottom: 120px;
+}
+.nav-bar>img{
+    margin-left: 120px;
+    height: 45%;
+    float: left;
+}
+
+.nav-bar>.btn{
+    float: right;
+    margin-right: 120px;
+    font-size: 0.9em;
+    font-weight:bolder;
+    height: 30px;
+    width: 80px;
+}
+
+.div4>.img-div>img{
+    margin-top: 80px;
+    height:400px;
+    width:650px;
+}
+
+.dropdown-content{
+    height: auto;
+    width: 80%;
+    background-color: rgb(47, 46, 46);
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+@media(max-width: 959px){
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        font-size: smaller;
+    }
+    .text-div{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        height: fit-content;
+        width: 80%;
+    }
+    .text-div>p{
+        padding: 0px;
+        margin: 0px;
+    }
+    .text-div h1{
+        padding: 0px;
+        margin: 0px;
+    }
+    .img-div{
+        height: 400px;
+        width: fit-content;
+        margin: 0px;
+        padding: 0px;
+    }
+    .img-div>img{
+        padding: 0px;
+        margin: 0px;
+        height: 400px;
+    }
+    .div3{
+        flex-direction: column-reverse;
+    }
+
+    .div4>.img-div>img{
+        margin:0px;
+        padding: 0px;
+    }
+
+    .div5{
+        flex-direction: column-reverse;
+    }
+    .div6{
+        height: auto;
+    }
+    .nav-bar>.btn{
+        margin: 20px;
+    }
+    .nav-bar>img{
+        height:25px;
+        width: 100px;
+        margin: 20px;
+    }
+    .div1{
+        font-size: 0.7em;
+    }
+    .div1>.text-div p{
+        margin-top: 20px;
+    }
+    .last{
+        margin-top: 0px;
+    }
+}
+
+@media(max-width :599px){
+    .item{
+        font-size:x-small;
+    }
+    .nav-bar{
+        margin-bottom: 0px;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .email>input{
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: x-large;
+    }
+    .btn{
+        font-size: x-large;
+    }
+    .last{
+        text-align: center;
+    }
+    .div6 .email{
+        margin-bottom: 30px;
+    }
+    .nav-bar{
+        margin-bottom: 80px;
+    }
+    .nav-bar>.btn{
+        margin: 10px;
+        font-size:larger;
+    }
+    .nav-bar>img{
+        margin: 10px;
+    }
+    .dropdown{
+        font-size: larger;
+    }
+    .dropdown-content{
+        font-size: larger;
+    }
+    .Question{
+        padding-top: 12px;
+    }
+
+    .fcon{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .f1{
+        grid-area: 1/1/1/1;
+        margin-bottom: 0px;
+    }
+    .f2{
+        grid-area: 1/2/1/2;
+        margin-bottom: 0px;
+    }
+    .f3{
+        grid-area: 2/1/2/1;
+        margin-top: 0px;
+    }
+    .f4{
+        grid-area: 2/2/2/2;
+        margin-top: 0px;
+    }
+    .div1 .text-div{
+        width: 100%;
+    }
+    .div1 h1{
+        font-size: xx-large;
+    }
+
+
+}
